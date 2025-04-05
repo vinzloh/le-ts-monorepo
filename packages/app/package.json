@@ -4,11 +4,15 @@
   "description": "",
   "keywords": [],
   "type": "module",
-  "scripts": {},
+  "scripts": {
+    "dev": "vite"
+  },
   "dependencies": {
     "@koei/lib": "workspace:*"
   },
   "devDependencies": {
-    "typescript": "catalog:"
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vite-tsconfig-paths": "catalog:"
   }
 }

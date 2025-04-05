@@ -11,6 +11,9 @@ With live types and IDE import hints.
 > Jarred Sumner, Bun
 > https://x.com/jarredsumner/status/1770479407184113972
 
+- https://github.com/vitejs/vite-ts-monorepo-rfc#approach-1-monorepo-setup-using-tsconfig-paths
+- https://github.com/aleclarson/vite-tsconfig-paths instead of resolve.alias
+
 ### ❌ export conditions - Why no
 
 > The problem arises when the user has a codebase with mixed .ts and .tsx files, and want to use extension-less imports for both.
