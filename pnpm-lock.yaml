@@ -4,6 +4,12 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+catalogs:
+  default:
+    typescript:
+      specifier: ^5.8.2
+      version: 5.8.2
+
 importers:
 
   .:
@@ -11,8 +17,21 @@ importers:
       '@ianvs/prettier-plugin-sort-imports':
         specifier: ^4.4.1
         version: 4.4.1(prettier@3.5.3)
+
+  packages/app:
+    dependencies:
+      '@koei/lib':
+        specifier: workspace:*
+        version: link:../lib
+    devDependencies:
       typescript:
-        specifier: ^5.8.2
+        specifier: 'catalog:'
+        version: 5.8.2
+
+  packages/lib:
+    devDependencies:
+      typescript:
+        specifier: 'catalog:'
         version: 5.8.2
 
 packages:

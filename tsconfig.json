@@ -1,14 +1,16 @@
 {
   "compilerOptions": {
-    "jsx": "react-jsx",
-    "moduleResolution": "Bundler",
+    "customConditions": [
+      // maps to package.json exports
+      "@koei/lib", // index.ts entrypoint
+      "@koei/lib-ts", // multiple extensions no-no
+      "@koei/lib-tsx" // multiple extensions no-no
+    ],
+    "isolatedModules": true,
+    "jsx": "preserve",
     "module": "ESNext",
-    "target": "ES2022",
-    "skipLibCheck": true,
-    "strictNullChecks": true,
-    "baseUrl": "./",
-    "paths": {
-      "@/*": ["./*"]
-    }
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "target": "ESNext"
   }
 }

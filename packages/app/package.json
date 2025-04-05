@@ -1,0 +1,14 @@
+{
+  "name": "@koei/app",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "type": "module",
+  "scripts": {},
+  "dependencies": {
+    "@koei/lib": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}

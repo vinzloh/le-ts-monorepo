@@ -1,0 +1,21 @@
+{
+  "name": "@koei/lib",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "type": "module",
+  "exports": {
+    ".": {
+      "@koei/lib": "./src/index.ts"
+    },
+    "./*": {
+      "@koei/lib-ts": "./src/*.ts",
+      "@koei/lib-tsx": "./src/*.tsx"
+    }
+  },
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "catalog:"
+  }
+}
