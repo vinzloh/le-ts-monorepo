@@ -4,15 +4,6 @@
   "description": "",
   "keywords": [],
   "type": "module",
-  "exports": {
-    ".": {
-      "@koei/lib": "./src/index.ts"
-    },
-    "./*": {
-      "@koei/lib-ts": "./src/*.ts",
-      "@koei/lib-tsx": "./src/*.tsx"
-    }
-  },
   "scripts": {},
   "dependencies": {},
   "devDependencies": {
