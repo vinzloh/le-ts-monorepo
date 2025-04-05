@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "paths": {
@@ -11,5 +11,5 @@
     "strict": true,
     "target": "ESNext"
   },
-  "include": ["packages/**/*.ts"]
+  "include": ["packages/**/*.ts", "packages/**/*.tsx"]
 }

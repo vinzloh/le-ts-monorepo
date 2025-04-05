@@ -4,11 +4,19 @@
   "description": "",
   "keywords": [],
   "type": "module",
-  "scripts": {},
-  "dependencies": {},
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "react-dom": "catalog:",
+    "react": "catalog:"
+  },
   "devDependencies": {
+    "@types/react-dom": "catalog:",
+    "@types/react": "catalog:",
+    "@vitejs/plugin-react-swc": "catalog:",
     "typescript": "catalog:",
-    "vite": "catalog:",
-    "vite-tsconfig-paths": "catalog:"
+    "vite-tsconfig-paths": "catalog:",
+    "vite": "catalog:"
   }
 }
