@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@koei/lib": "workspace:*",
+    "@koei/ui": "workspace:*",
     "react-dom": "catalog:",
     "react": "catalog:"
   },

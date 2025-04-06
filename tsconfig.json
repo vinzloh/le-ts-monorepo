@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "isolatedModules": true,
     "jsx": "react-jsx",
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "paths": {
-      "@koei/lib": ["./packages/lib/src"],
-      "@koei/lib/*": ["./packages/lib/src/*"]
+      "@koei/ui": ["packages/ui/src"],
+      "@koei/ui/*": ["packages/ui/src/*"]
     },
     "strict": true,
     "target": "ESNext"

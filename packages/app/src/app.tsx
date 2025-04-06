@@ -1,5 +1,5 @@
-import { Button, useHook } from '@koei/lib';
-import { Button as Button2 } from '@koei/lib/components/button';
+import { Button, useHook } from '@koei/ui';
+import { Button as Button2 } from '@koei/ui/components/button';
 
 import './app.css';
 

@@ -50,9 +50,9 @@ importers:
 
   packages/app:
     dependencies:
-      '@koei/lib':
+      '@koei/ui':
         specifier: workspace:*
-        version: link:../lib
+        version: link:../ui
       react:
         specifier: 'catalog:'
         version: 18.3.1
@@ -85,7 +85,7 @@ importers:
         specifier: 'catalog:'
         version: 5.1.4(typescript@5.8.2)(vite@5.4.17(lightningcss@1.29.2))
 
-  packages/lib:
+  packages/ui:
     dependencies:
       react:
         specifier: 'catalog:'
