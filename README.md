@@ -2,6 +2,8 @@
 
 With live types and IDE import hints.
 
+- Tailwind 4.0 with monorepo HMR
+
 ## Setup considerations
 
 ### ✅ tsconfig paths - Why yes

@@ -12,6 +12,8 @@
     "react": "catalog:"
   },
   "devDependencies": {
+    "tailwindcss": "catalog:",
+    "@tailwindcss/vite": "catalog:",
     "@types/react-dom": "catalog:",
     "@types/react": "catalog:",
     "@vitejs/plugin-react-swc": "catalog:",

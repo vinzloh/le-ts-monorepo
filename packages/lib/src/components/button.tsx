@@ -1,14 +1,7 @@
 import * as React from 'react';
 
+import '../tailwind.css';
+
 export function Button(props: React.ComponentProps<'button'>) {
-  return (
-    <button
-      style={{
-        background: '#efefef',
-        padding: '8px',
-        borderRadius: '8px',
-      }}
-      {...props}
-    />
-  );
+  return <button className="bg-amber-400 p-2 rounded-md" {...props} />;
 }
