@@ -12,4 +12,5 @@ export default defineConfig({
     },
   },
   plugins: [tsconfigPaths(), react(), tailwindcss()],
+  server: { port: 6006 },
 });

@@ -10,10 +10,11 @@
   "scripts": {
     "build": "pnpm --filter '@koei/*' build",
     "dev": "pnpm --filter '@koei/app' dev",
-    "preview": "pnpm --filter '@koei/app' preview"
+    "preview": "pnpm --filter '@koei/app' preview",
+    "storybook": "pnpm --filter '@koei/ui' dev"
   },
-  "dependencies": {},
   "devDependencies": {
-    "@ianvs/prettier-plugin-sort-imports": "catalog:"
+    "@ianvs/prettier-plugin-sort-imports": "catalog:",
+    "prettier": "catalog:"
   }
 }
