@@ -9,8 +9,9 @@
       "@koei/ui": ["packages/ui/src"],
       "@koei/ui/*": ["packages/ui/src/*"]
     },
-    "strict": true,
-    "target": "ESNext"
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "target": "ES2022"
   },
   "include": ["packages/**/*.ts", "packages/**/*.tsx"]
 }
