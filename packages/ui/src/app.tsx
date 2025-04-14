@@ -1,5 +1,5 @@
-import { Button } from './components/button';
-import { Textfield } from './components/textfield';
+import { Button } from '~/components/button';
+import { Textfield } from '~/components/textfield';
 
 import './tailwind.css';
 

@@ -34,9 +34,12 @@ function Home() {
 
   return (
     <div>
-      <h1>TanStack Start</h1>
+      <h1 className="text-2xl bg-amber-600 italic mb-4">
+        TanStack Start + tailwindcss minus @koei/ui
+      </h1>
       <button
         type="button"
+        className="border-2 p-2 rounded"
         onClick={() => {
           updateCount({ data: 1 }).then(() => {
             router.invalidate();

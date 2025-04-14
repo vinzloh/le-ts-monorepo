@@ -1,6 +1,6 @@
 /** @type {import('prettier').Config} */
 module.exports = {
-  importOrder: ['<THIRD_PARTY_MODULES>', '', '^@/(.*)$', '', '^[./]'],
+  importOrder: ['<THIRD_PARTY_MODULES>', '', '^~/(.*)$'],
   importOrderParserPlugins: ['typescript', 'jsx', 'decorators-legacy'],
   overrides: [
     {
@@ -10,9 +10,7 @@ module.exports = {
       },
     },
   ],
-  plugins: [
-    '@ianvs/prettier-plugin-sort-imports',
-  ],
+  plugins: ['@ianvs/prettier-plugin-sort-imports'],
   printWidth: 80,
   semi: true,
   singleQuote: true,
