@@ -1,4 +1,5 @@
 import * as fs from 'node:fs';
+import { Button } from '@koei/ui';
 import { createFileRoute, useRouter } from '@tanstack/react-router';
 import { createServerFn } from '@tanstack/react-start';
 
@@ -37,6 +38,15 @@ function Home() {
       <h1 className="text-2xl bg-amber-600 italic mb-4">
         TanStack Start + tailwindcss minus @koei/ui
       </h1>
+      <Button
+        onClick={() => {
+          updateCount({ data: 2 }).then(() => {
+            router.invalidate();
+          });
+        }}
+      >
+        @koei/ui Tailwind Button
+      </Button>
       <button
         type="button"
         className="border-2 p-2 rounded"

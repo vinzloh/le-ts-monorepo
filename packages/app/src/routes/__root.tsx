@@ -1,3 +1,4 @@
+import uiCss from '@koei/ui/tailwind.css?url';
 import {
   createRootRoute,
   HeadContent,
@@ -18,7 +19,10 @@ export const Route = createRootRoute({
       },
       { title: 'TanStack Start Starter' },
     ],
-    links: [{ rel: 'stylesheet', href: appCss }],
+    links: [
+      { rel: 'stylesheet', href: appCss },
+      { rel: 'stylesheet', href: uiCss }, // this avoids FOUC in local dev
+    ],
   }),
   component: RootComponent,
 });

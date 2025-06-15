@@ -1,9 +1,11 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "baseUrl": ".",
     "paths": {
-      "~/*": ["src/*"]
+      "~/*": ["${configDir}/src/*"],
+      // base tsconfig paths overwritten https://github.com/microsoft/TypeScript/issues/44589
+      "@koei/ui": ["packages/ui/src"],
+      "@koei/ui/*": ["packages/ui/src/*"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"]
