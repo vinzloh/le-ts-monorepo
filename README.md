@@ -6,6 +6,12 @@ With live types and IDE import hints.
 
 ## Setup considerations
 
+### Project references over path aliases
+
+> Historically, Nx, and many other monorepo tools, have relied on TypeScript's path aliases to connect your many packages to one another. While this approach can work, it does come with some overhead. Apart from runtimes and bundlers requiring special handling, the main limitation is in large monorepos. We've seen larger organizations struggle with slowness, memory issues and editors not being able to properly resolve symbols.
+>
+> https://nx.dev/blog/new-nx-experience-for-typescript-monorepos
+
 ### ✅ tsconfig paths - Why yes
 
 > They’re still easier to use than any of the alternatives imo. Won’t go anywhere unless that changes
