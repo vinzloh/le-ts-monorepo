@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    // paths overwritten https://github.com/microsoft/TypeScript/issues/44589
+    "paths": {
+      "@koei/ui": ["packages/ui/src"],
+      "@koei/ui/*": ["packages/ui/src/*"],
+      // for package-level import resolution
+      "~/*": ["${configDir}/src/*"]
+    },
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "target": "ES2022"
+  },
+  // include overwritten https://github.com/microsoft/TypeScript/issues/44589
+  "include": [
+    // for auto-import
+    "packages/**/*.ts",
+    "packages/**/*.tsx",
+    // for package-level vite resolution
+    "${configDir}/**/*.ts",
+    "${configDir}/**/*.tsx"
+  ]
+}

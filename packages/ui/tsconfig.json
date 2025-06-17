@@ -1,11 +1,6 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "~/*": ["src/*"]
-    },
     "types": ["vite/client"]
-  },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/tailwind.css"]
+  }
 }
