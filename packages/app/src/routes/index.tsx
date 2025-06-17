@@ -35,29 +35,32 @@ function Home() {
 
   return (
     <div>
-      <h1 className="text-2xl bg-amber-600 italic mb-4">
-        TanStack Start + tailwindcss minus @koei/ui
+      <h1 className="text-2xl bg-blue-600 text-gray-200 italic p-2">
+        TanStack Start + tailwindcss + @koei/ui
       </h1>
-      <Button
-        onClick={() => {
-          updateCount({ data: 2 }).then(() => {
-            router.invalidate();
-          });
-        }}
-      >
-        @koei/ui Tailwind Button
-      </Button>
-      <button
-        type="button"
-        className="border-2 p-2 rounded"
-        onClick={() => {
-          updateCount({ data: 1 }).then(() => {
-            router.invalidate();
-          });
-        }}
-      >
-        Add 1 to {state}?
-      </button>
+      <div className="flex gap-5 items-center p-4">
+        <Button
+          onClick={() => {
+            updateCount({ data: 2 }).then(() => {
+              router.invalidate();
+            });
+          }}
+        >
+          @koei/ui TW Button
+        </Button>
+        <button
+          type="button"
+          className="border-2 p-2 rounded"
+          onClick={() => {
+            updateCount({ data: 1 }).then(() => {
+              router.invalidate();
+            });
+          }}
+        >
+          @koei/app TW html button
+        </button>
+        <div>Count: {state}</div>
+      </div>
     </div>
   );
 }
