@@ -1,5 +1,13 @@
 # TypeScript Monorepo (WIP 🛠)
 
+## Drizzle + Neon
+
+`.env`:
+
+```
+DATABASE_URL=postgresql://[user]:[password]@host:5432/database
+```
+
 With live types and IDE import hints.
 
 - Tailwind 4.0 with monorepo HMR

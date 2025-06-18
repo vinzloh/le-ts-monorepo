@@ -6,6 +6,12 @@ export default defineConfig({
   server: { preset: 'netlify' },
   tsr: { appDirectory: 'src' },
   vite: {
+    build: {
+      rollupOptions: {
+        // https://github.com/brianc/node-postgres/issues/2987
+        external: ['cloudflare:sockets'],
+      },
+    },
     plugins: [
       tsConfigPaths({
         projects: ['./tsconfig.json'],

@@ -9,7 +9,12 @@
   "packageManager": "pnpm@9.15.9+sha512.68046141893c66fad01c079231128e9afb89ef87e2691d69e4d40eee228988295fd4682181bae55b58418c3a253bde65a505ec7c5f9403ece5cc3cd37dcf2531",
   "scripts": {
     "build": "pnpm --filter '@koei/*' build",
-    "dev": "pnpm --filter '@koei/app' dev",
+    "dev:app": "pnpm --filter '@koei/app' dev",
+    "dev:core": "pnpm --filter '@koei/core' dev",
+    "db:seed": "pnpm --filter '@koei/core' db:seed",
+    "db:push": "pnpm --filter '@koei/core' db:push",
+    "db:generate": "pnpm --filter '@koei/core' db:generate",
+    "db:migrate": "pnpm --filter '@koei/core' db:migrate",
     "preview": "pnpm --filter '@koei/app' preview",
     "storybook": "pnpm --filter '@koei/ui' dev"
   },

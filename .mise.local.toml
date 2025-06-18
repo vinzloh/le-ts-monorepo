@@ -1,0 +1,28 @@
+[tasks.db-studio]
+run = "pnpm --filter '@koei/core' db:studio"
+
+[tasks.db-push]
+run = "pnpm --filter '@koei/core' db:push"
+
+[tasks.db-generate]
+run = "pnpm --filter '@koei/core' db:generate"
+
+[tasks.db-migrate]
+depends = ["db-generate"]
+run = "pnpm --filter '@koei/core' db:migrate"
+
+[tasks.db-reset]
+depends = ["db-migrate"]
+run = "pnpm --filter '@koei/core' db:reset"
+
+[tasks.db-seed]
+depends = ["db-migrate"]
+run = "pnpm --filter '@koei/core' db:seed"
+
+[tasks.dev-core]
+depends = ["db-migrate"]
+run = "pnpm --filter '@koei/core' dev"
+
+[tasks.dev-app]
+depends = ["db-migrate"]
+run = "pnpm --filter '@koei/app' dev"

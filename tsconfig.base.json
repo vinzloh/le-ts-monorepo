@@ -7,6 +7,8 @@
     "moduleResolution": "Bundler",
     // paths overwritten https://github.com/microsoft/TypeScript/issues/44589
     "paths": {
+      "@koei/core": ["packages/core/src"],
+      "@koei/core/*": ["packages/core/src/*"],
       "@koei/ui": ["packages/ui/src"],
       "@koei/ui/*": ["packages/ui/src/*"],
       // for package-level import resolution
