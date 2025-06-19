@@ -1,8 +1,6 @@
 import { drizzle } from 'drizzle-orm/node-postgres';
 import { seed } from 'drizzle-seed';
 
-import 'dotenv/config';
-
 import { usersTable } from './schema';
 
 const users = usersTable;

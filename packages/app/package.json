@@ -5,24 +5,26 @@
   "keywords": [],
   "type": "module",
   "scripts": {
-    "dev": "vinxi dev",
     "build": "vinxi build",
-    "preview": "vinxi start"
+    "dev": "pnpm dot-env vinxi dev",
+    "dot-env": "dotenv -e ../../.env --",
+    "preview": "pnpm dot-env vinxi start"
   },
   "dependencies": {
     "@koei/ui": "workspace:*",
     "@tanstack/react-router": "^1.115.0",
     "@tanstack/react-start": "^1.115.1",
-    "react": "catalog:",
     "react-dom": "catalog:",
+    "react": "catalog:",
     "vinxi": "^0.5.3"
   },
   "devDependencies": {
     "@tailwindcss/vite": "catalog:",
     "@types/node": "catalog:",
-    "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
+    "@types/react": "catalog:",
     "@vitejs/plugin-react-swc": "catalog:",
+    "dotenv-cli": "catalog:",
     "tailwindcss": "catalog:",
     "typescript": "catalog:",
     "vite-tsconfig-paths": "catalog:"

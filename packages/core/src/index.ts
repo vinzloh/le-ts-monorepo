@@ -1,8 +1,6 @@
 // Make sure to install the 'pg' package
 import { drizzle } from 'drizzle-orm/node-postgres';
 
-import 'dotenv/config';
-
 import { usersTable } from './db/schema';
 
 // You can specify any property from the node-postgres connection options
