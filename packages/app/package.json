@@ -8,7 +8,7 @@
     "build": "vinxi build",
     "dev": "pnpm dot-env vinxi dev",
     "dot-env": "dotenv -e ../../.env --",
-    "preview": "pnpm dot-env vinxi start"
+    "preview": "pnpm dot-env vinxi start --host localhost"
   },
   "dependencies": {
     "@koei/ui": "workspace:*",

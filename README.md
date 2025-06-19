@@ -1,5 +1,9 @@
 # TypeScript Monorepo (WIP 🛠)
 
+## https://localhost
+
+- https://github.com/FiloSottile/mkcert
+
 ## Drizzle + Neon
 
 `.env`:
