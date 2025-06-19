@@ -1,6 +1,6 @@
 /** @type {import('prettier').Config} */
 module.exports = {
-  importOrder: ['<THIRD_PARTY_MODULES>', '', '^~/(.*)$'],
+  importOrder: ['<THIRD_PARTY_MODULES>', '', '^~/(.*)$', '', '^./(.*)$'],
   importOrderParserPlugins: ['typescript', 'jsx', 'decorators-legacy'],
   overrides: [
     {
